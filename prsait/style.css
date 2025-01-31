@@ -1,0 +1,259 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background: #123C69;
+    height: auto;
+    opacity: 0; /* Начальное значение непрозрачности */
+    animation: fade-in 3s forwards; /* Анимация появления */
+    margin: 0;
+    padding: 0;
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Начальное значение непрозрачности */
+    }
+    to {
+        opacity: 3; /* Конечное значение непрозрачности */
+    }
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    justify-content: end;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    background-clip: text; /* Применить градиент к тексту */
+    color: #000000;
+}
+
+.buthed {
+    margin-top: 10px;
+    margin-right: 150px;
+
+}
+
+button {
+    background: rgb(228, 228, 228);
+    border-radius: 10px;
+    border: none;
+    cursor: crosshair;
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    padding: 10px 15px;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+    
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.btn btn-primary{
+    color: #000;
+}
+
+h2 {
+    color: rgb(228, 228, 228);
+}
+
+section {
+    padding: 0;
+    margin-left: 20px;
+    
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column-reverse;
+}
+.container-img {
+    display: flex;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    height: auto;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+.container-img2 {
+    display: flex;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    height: auto;
+
+}
+
+.text-footer {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    font-size: 19px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font:16px Roboto, sans-serif;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+
+  
+  .submenu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li:hover .submenu {
+    display: block;
+  }
+
+
+
+#app{
+    color: white;
+    
+}
+
+.advertising {
+    width: 100%;
+    height: 30px;
+    background-color: #AC3B61;
+    margin-top: -10px;
+}
+
+.table-m-text{
+    padding: 0;
+    margin-left: 20px;
+}
+
+.form-control me-2{
+    position: relative;
+    border: #BAB2B5;
+}
+
+.form-control{
+    background-color: #ffffff;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.search-container{
+    display: flex;
+    margin-top: 12px;
+    width: 35%;
+    height: 20%;
+    justify-content: center;
+}
+
+.search{
+    width: 50%;
+    height: 20%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.d-flex {
+    width: 60%;
+    height: 20%;
+}
+
+footer {
+    background-color: #123C69;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    opacity: 0; /* Начальное значение непрозрачности */
+    animation: fade-in 3s forwards;
+}
+
+.container-footer{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.social-links{
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.menushka{
+    margin-top: 7px;
+}
+
+.carousel{
+    z-index: -1;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+.navbar{
+    display: flex;
+    color: #BAB2B5;
+    background-color: #123C69;
+}
